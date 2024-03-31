@@ -1,0 +1,20 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: vecnehladny-premises-ufe
+spec:
+  module-uri: http://vecnehladny-premises-ufe.wac-project/build/premises-ufe.esm.js
+                     # module web komponentu pre tento mikroFE
+                     # - umiestnený v namespace wac-project
+  navigation:
+    - element: vecnehladny-premises-wl-list    # element, ktorý bude vložený na stránku
+                                    # pri navigácii na register pristorov
+      path: vecnehladny-premises-wl      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      title: vecnehladny | Register priestorov      # názov mikro aplikácie
+      details: Spravuje register priestorov v nemocnici
+  preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
+  proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti
+                                    # musí byť táto hodnota nastavená na true
+  hash-suffix: v1alpha1             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou
+                                    # sa mení názov URL pre modul a tým je možné predísť problémom
+                                    # s verziami vo vyrovnávacích pamätiach
