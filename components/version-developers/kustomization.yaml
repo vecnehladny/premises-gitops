@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+
+images:
+- name: vecnehladny/premises-ufe
+  newName: vecnehladny/premises-ufe # {"$imagepolicy":  "wac-hospital:premises-ufe:name"}
+  newTag: main # {"$imagepolicy": "wac-hospital:premises-ufe:tag"}
+
+- name: milung/ufe-controller
+  newName: milung/ufe-controller # {"$imagepolicy":  "wac-hospital:ufe-controller:name"}
+  newTag: latest # {"$imagepolicy": "wac-hospital:ufe-controller:tag"}

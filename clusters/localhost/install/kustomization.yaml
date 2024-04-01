@@ -10,3 +10,6 @@ commonLabels:
 
 resources:
 - ../../../apps/vecnehladny-premises-ufe
+
+components:
+ - ../../../components/version-developers
