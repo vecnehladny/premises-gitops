@@ -7,7 +7,7 @@ spec:
                      # module web komponentu pre tento mikroFE
                      # - umiestnený v namespace wac-hospital
   navigation:
-    - element: vecnehladny-premises-wl-list    # element, ktorý bude vložený na stránku
+    - element: vecnehladny-premises-wl-app    # element, ktorý bude vložený na stránku
                                     # pri navigácii na register pristorov
       path: vecnehladny-premises-wl      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: vecnehladny | Register priestorov      # názov mikro aplikácie
