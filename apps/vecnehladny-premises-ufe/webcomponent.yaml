@@ -3,9 +3,9 @@ kind: WebComponent
 metadata:
   name: vecnehladny-premises-ufe
 spec:
-  module-uri: http://vecnehladny-premises-ufe.wac-project/build/premises-ufe.esm.js
+  module-uri: http://vecnehladny-premises-ufe.wac-hospital/build/premises-ufe.esm.js
                      # module web komponentu pre tento mikroFE
-                     # - umiestnený v namespace wac-project
+                     # - umiestnený v namespace wac-hospital
   navigation:
     - element: vecnehladny-premises-wl-list    # element, ktorý bude vložený na stránku
                                     # pri navigácii na register pristorov
