@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
- name: vecnehladny-gitops-repo # v spoločnom klastri je nasadených viacero takýchto objektov
+ name: vecnehladny-proj-gitops-repo # v spoločnom klastri je nasadených viacero takýchto objektov
  namespace: wac-hospital
 spec:
  interval: 1m0s
