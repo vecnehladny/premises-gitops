@@ -9,12 +9,17 @@ spec:
   navigation:
     - element: vecnehladny-premises-wl-app    # element, ktorý bude vložený na stránku
                                     # pri navigácii na register pristorov
+      attributes:
+      - name: api-base
+        value: http://localhost:5000/api
+      - name: building-id
+        value: test
       path: vecnehladny-premises-wl      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: vecnehladny | Register priestorov      # názov mikro aplikácie
       details: Spravuje register priestorov v nemocnici
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti
                                     # musí byť táto hodnota nastavená na true
-  hash-suffix: v1alpha1             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou
+  hash-suffix: v1alpha2             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou
                                     # sa mení názov URL pre modul a tým je možné predísť problémom
                                     # s verziami vo vyrovnávacích pamätiach
