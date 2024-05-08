@@ -16,7 +16,7 @@ spec:
         - name: api-base
           value: http://localhost:30081/api
         - name: building-id
-          value: test
+          value: building001
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti
                                     # musí byť táto hodnota nastavená na true
