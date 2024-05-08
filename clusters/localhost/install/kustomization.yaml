@@ -10,6 +10,11 @@ commonLabels:
 
 resources:
 - ../../../apps/vecnehladny-premises-ufe
+ - ../../../apps/vecnehladny-premises-webapi
 
 components:
  - ../../../components/version-developers
+ - https://github.com/vecnehladny/premises-webapi//deployments/kustomize/components/mongodb
+
+patches:
+ - path: patches/premises-webapi.service.yaml
