@@ -10,7 +10,7 @@ commonLabels:
 
 resources:
 - ../../../apps/vecnehladny-premises-ufe
- - ../../../apps/vecnehladny-premises-webapi
+- ../../../apps/vecnehladny-premises-webapi
 
 components:
  - ../../../components/version-developers
