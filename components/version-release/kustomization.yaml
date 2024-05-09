@@ -3,7 +3,7 @@ kind: Component
 images:
 - name: vecnehladny/premises-ufe
   newName: vecnehladny/premises-ufe
-  newTag: 1.0.2  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+  newTag: 1.1.0  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
 
 replacements:
  - targets:
